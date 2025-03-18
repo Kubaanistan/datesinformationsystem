@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>世界のデーツ農園状況マッピングツール</title>
+  <style>
+    /* Resetやベーススタイルを整える */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #6d4c41; /* デーツっぽいブラウン */
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* ページ全体のレイアウト */
+    main {
+      display: flex;
+      flex-direction: row;
+      height: calc(100vh - 60px); /* ヘッダーの分を差し引き */
+    }
+
+    /* 地図表示エリア */
+    .map-container {
+      flex: 2;
+      background-color: #e0e0e0; /* とりあえずグレーで地図エリアを示す */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    /* サイドパネル */
+    .side-panel {
+      flex: 1;
+      background-color: #fff;
+      border-left: 1px solid #ccc;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+
+    .region-info {
+      margin-bottom: 2rem;
+    }
+
+    .region-info h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .region-info p {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    /* フッター */
+    footer {
+      background-color: #fff;
+      color: #999;
+      text-align: center;
+      padding: 0.5rem;
+      border-top: 1px solid #ccc;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>世界のデーツ農園状況マッピングツール (UIサンプル)</h1>
+  </header>
+
+  <main>
+    <!-- 地図表示エリア -->
+    <div class="map-container">
+      [地図が表示される領域（UIサンプル）]
+    </div>
+
+    <!-- サイドパネル -->
+    <div class="side-panel">
+      <!-- 地域情報 -->
+      <div class="region-info">
+        <h2>地域名: エジプト (例)</h2>
+        <p>栽培面積：<strong>1,200 ha</strong></p>
+        <p>天気：<strong>晴れ / 気温 32℃</strong></p>
+        <p>生育ステージ：<strong>開花期</strong></p>
+      </div>
+
+      <!-- SNS関連（将来の拡張） -->
+      <div class="region-info">
+        <h2>SNS投稿</h2>
+        <p>■ 最新の投稿1</p>
+        <p>■ 最新の投稿2</p>
+        <p>■ 最新の投稿3</p>
+      </div>
+
+      <!-- ニュース関連（将来の拡張） -->
+      <div class="region-info">
+        <h2>ニュース</h2>
+        <p>■ XXX地方で新たなデーツ生産協定が締結</p>
+        <p>■ 市場価格の上昇報道について</p>
+      </div>
+
+      <!-- 他に追加したい情報をここへ追記 -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Date Palm Mapping Project
+  </footer>
+
+</body>
+</html>
